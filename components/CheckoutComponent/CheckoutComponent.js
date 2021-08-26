@@ -14,6 +14,19 @@ const CheckoutComponent = () => {
     let vat = 118;
     let deliveryFee = 30;
     let discount = 50;
+
+    const updateCart = (product, qty) => {
+        const index = cartItems?.findIndex(productCode => productCode?.code == product?.code);
+        const newCartItems = [...cartItems];
+        newCartItems[index].quantity += qty;
+        if (newCartItems[index].quantity > 0) {
+            setcartItems(newCartItems)
+        } else {
+            newCartItems.splice(index, 1);
+            setcartItems(newCartItems);
+        }
+    }
+
     return (
         <div className={styles.checkout_wrapper}>
             <div className={styles.checkout__container}>
@@ -27,9 +40,9 @@ const CheckoutComponent = () => {
                             <h4>{item?.title}</h4>
                             <p>Tk {item?.salePrice ? item?.salePrice : item?.regularPrice}</p>
                             <div className={styles.counter__wrapper}>
-                                <RemoveIcon style={{ fontSize: 15, border: '1px solid orange', cursor: 'pointer' }} />
+                                <RemoveIcon onClick={() => updateCart(item, -1)} style={{ fontSize: 15, border: '1px solid orange', cursor: 'pointer' }} />
                                 <span className={styles.quantity}>{item?.quantity}</span>
-                                <AddIcon style={{ fontSize: 15, border: '1px solid orange', cursor: 'pointer' }} />
+                                <AddIcon onClick={() => updateCart(item, 1)} style={{ fontSize: 15, border: '1px solid orange', cursor: 'pointer' }} />
                             </div>
                             <p>Tk {item?.salePrice ? item?.salePrice * item?.quantity : item?.regularPrice * item?.quantity}</p>
 

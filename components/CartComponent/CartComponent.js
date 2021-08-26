@@ -20,11 +20,7 @@ const CartComponent = () => {
             setcartItems(newCartItems);
         }
     }
-    const decreaseQty = (product) => {
-        const index = cartItems?.findIndex(productCode => productCode?.code == product?.code);
-        cartItems[index].quantity--;
-        setcartItems(cartItems)
-    }
+
     useEffect(() => {
     }, [cartItems])
 
@@ -57,7 +53,7 @@ const CartComponent = () => {
                                 </div>
                             </div>
                             <div className={styles.image__container}>
-                                <Image height={200} width={200} src={product?.imgSrc} />
+                                <Image height={200} width={200} src={product?.imgSrc} alt='No Items found' />
                             </div>
                         </div>
                     )}
