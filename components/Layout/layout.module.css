@@ -1,0 +1,26 @@
+.main{
+    background: orange;
+    padding: 20px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main a{
+    padding: 0 20px;
+    color: #fff;
+}
+.footer__wrapper{
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+}
+.cartIcon{
+    position: relative;
+}
+@media (max-width: 600px){
+    .main a{
+        padding: 0 5px;
+    }
+}

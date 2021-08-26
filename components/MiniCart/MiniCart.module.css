@@ -1,0 +1,13 @@
+.main{
+   background: orange;
+    height: 75px;
+    width: 75px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}

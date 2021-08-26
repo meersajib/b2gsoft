@@ -1,0 +1,20 @@
+.main{
+    text-align: center;
+}
+.table{
+    max-width: 500px;
+}
+.tableContainer{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.tableHead{
+    background-color: #000;
+}
+.tableHead th{
+    color: #fff;
+}
+
+.capitalize{
+    text-transform: uppercase;
+}

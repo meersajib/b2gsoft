@@ -1,0 +1,147 @@
+.main{
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.main h2{
+    font-size: 20px;
+    line-height: 25px;
+    height: 50px;
+}
+.discount{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: orange;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fff;
+    z-index: 2;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.flex_left_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.flex_attach{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    background-color: #fbbe4e;
+    padding: 5px;
+}
+.flex_attach .MuiSvgIcon-root{
+    width: 12px!important;
+    height: 12px!important;
+}
+.card{
+    position: relative;
+}
+.code{
+    font-size: 14px;
+}
+.code span{
+    font-weight: bold;
+}
+.prices{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.prices span{
+    font-size: 16px;
+}
+.prices span:first-child{
+    text-decoration: line-through;
+}
+.prices span:last-child{
+    padding-left: 30px;
+    font-weight: bold;
+
+}
+.button__container button{
+    font-size: 11px;
+}
+.button__container button:last-child{
+    background-color: orange;
+    color: #fff;
+}
+
+@media (min-width: 280px){
+    .main{
+        width: 250px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 540px){
+    .main{
+        width: 520px;
+        margin: 0 auto;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width: 650px){
+    .main{
+        width: 510px;
+        margin: 0 auto;
+        grid-template-columns: repeat(2,1fr);
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+@media (min-width: 790px){
+    .main{
+        width: 750px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3,1fr);
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (min-width: 1000px){
+    .main{
+        width: 980px;
+        margin: 0 auto;
+        grid-template-columns: repeat(3,1fr);
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (min-width: 1270px){
+    .main{
+        width: 1250px;
+        margin: 0 auto;
+        grid-template-columns: repeat(5,1fr);
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (min-width: 1350px){
+    .main{
+        width: 1330px;
+        margin: 0 auto;
+        grid-template-columns: repeat(5,1fr);
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (min-width: 1620px){
+    .main{
+        width: 1600px;
+        margin: 0 auto;
+        grid-template-columns: repeat(6,1fr);
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
