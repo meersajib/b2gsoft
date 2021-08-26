@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import styles from './Layout.module.css';
+import styles from './layout.module.css';
 import NotificationBar from '../NotificationBar/NotificationBar';
 import MiniCart from '../MiniCart/MiniCart';
 
